@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login - Mining Technicians</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+  <div class="brand">
+    <div class="logo">MT</div>
+    <span class="brand-text">Mining Technicians</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+</header>
+
+<section class="hero login-hero">
+
+  <div class="auth-container">
+
+    <div class="auth-toggle">
+      <button id="loginBtn" class="active">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm" class="auth-form">
+
+      <h2>Welcome Back</h2>
+
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+
+      <button type="submit" class="gold-btn">Login</button>
+
+    </form>
+
+    <!-- SIGNUP FORM -->
+    <form id="signupForm" class="auth-form hidden">
+
+      <h2>Create Account</h2>
+
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+
+      <button type="submit" class="gold-btn">Sign Up</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<script>
+const loginBtn = document.getElementById("loginBtn");
+const signupBtn = document.getElementById("signupBtn");
+const loginForm = document.getElementById("loginForm");
+const signupForm = document.getElementById("signupForm");
+
+loginBtn.onclick = () => {
+  loginForm.classList.remove("hidden");
+  signupForm.classList.add("hidden");
+  loginBtn.classList.add("active");
+  signupBtn.classList.remove("active");
+};
+
+signupBtn.onclick = () => {
+  signupForm.classList.remove("hidden");
+  loginForm.classList.add("hidden");
+  signupBtn.classList.add("active");
+  loginBtn.classList.remove("active");
+};
+</script>
+<script type="module" src="js/auth.js"></script>
+
+</body>
+</html>

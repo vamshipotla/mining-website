@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Get a Quote - Mining Technicians</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <div class="brand">
+    <div class="logo">MT</div>
+    <span class="brand-text">Mining Technicians</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
+
+</header>
+
+<section class="hero quote-hero">
+
+  <div class="form-container">
+
+    <h1>Get a Quote</h1>
+
+    <p id="serviceText"></p>
+
+    <form id="quoteForm">
+
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="service" placeholder="Service Required" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+
+      <button type="submit">Get a Quote</button>
+
+    </form>
+
+    <p id="successMessage" class="success"></p>
+
+  </div>
+
+</section>
+
+<script src="js/quote.js"></script>
+
+</body>
+</html>

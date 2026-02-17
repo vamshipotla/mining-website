@@ -1,0 +1,432 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat', sans-serif;
+}
+
+/* BODY */
+body{
+background:#0a0d12;
+color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+/* BRAND */
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo{
+width:42px;
+height:42px;
+border-radius:8px;
+background:linear-gradient(135deg,#d4af37,#8f6b1f);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+color:#000;
+font-size:16px;
+}
+
+.brand-text{
+font-size:18px;
+font-weight:600;
+letter-spacing:0.5px;
+color:#eaeaea;
+}
+
+/* NAV LINKS */
+.nav-links{
+display:flex;
+align-items:center;
+gap:24px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#e6e6e6;
+font-size:14px;
+font-weight:500;
+transition:color 0.3s ease;
+}
+
+.nav-links a:hover{
+color:#d4af37;
+}
+
+/* HAMBURGER MENU */
+.menu{
+width:22px;
+cursor:pointer;
+}
+
+.menu span{
+display:block;
+height:2px;
+background:#d4af37;
+margin:5px 0;
+border-radius:2px;
+}
+
+/* HERO SECTION */
+.hero{
+height:100vh;
+/*background-image:url("../images/home.png");*/
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+background-color:#0a0d12;
+position:relative;
+}
+
+/* SOFT EDGE BLENDING */
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(
+ellipse at center,
+rgba(0,0,0,0.4) 40%,
+rgba(0,0,0,0.95) 100%
+);
+z-index:1;
+pointer-events:none;   /* THIS FIXES THE CLICK ISSUE */
+}
+
+
+
+/* SERVICES PAGE BACKGROUND */
+.services-hero{
+height:100vh;
+background-image:url("../images/services-bg.jpg");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+background-color:#0a0d12;
+position:relative;
+}
+
+.services-hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(
+ellipse at center,
+rgba(0,0,0,0.4) 40%,
+rgba(0,0,0,0.9) 100%
+);
+}
+
+/* SERVICES CONTENT */
+.services-content{
+position:relative;
+z-index:2;
+padding-top:120px;
+text-align:center;
+}
+
+.services-content h1{
+font-size:38px;
+font-weight:700;
+margin-bottom:40px;
+color:#f5f5f5;
+}
+
+/* CARDS GRID */
+.service-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:900px;
+margin:0 auto;
+padding:0 20px;
+}
+
+/* CARD STYLE */
+.card{
+background:rgba(15,18,25,0.85);
+border:1px solid rgba(212,175,55,0.3);
+border-radius:14px;
+padding:30px 20px;
+text-decoration:none;
+color:#eaeaea;
+transition:all 0.3s ease;
+}
+
+.card:hover{
+border-color:#d4af37;
+transform:translateY(-5px);
+background:rgba(20,24,32,0.95);
+}
+
+.icon{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.card h3{
+font-weight:600;
+font-size:16px;
+}
+
+
+/* QUOTE PAGE */
+.quote-hero{
+height:100vh;
+background-image:url("../images/quote-bg.jpg");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+background-color:#0a0d12;
+position:relative;
+}
+
+.quote-hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(
+ellipse at center,
+rgba(0,0,0,0.5) 40%,
+rgba(0,0,0,0.95) 100%
+);
+}
+
+.form-container{
+position:relative;
+z-index:2;
+max-width:450px;
+margin:120px auto;
+background:rgba(15,18,25,0.9);
+padding:35px;
+border-radius:14px;
+border:1px solid rgba(212,175,55,0.4);
+text-align:center;
+}
+
+.form-container h1{
+margin-bottom:10px;
+}
+
+.form-container p{
+margin-bottom:20px;
+font-size:14px;
+color:#ccc;
+}
+
+form input{
+width:100%;
+padding:12px;
+margin-bottom:12px;
+background:#0a0d12;
+border:1px solid rgba(212,175,55,0.5);
+color:white;
+border-radius:6px;
+}
+
+form button{
+width:100%;
+padding:12px;
+background:#d4af37;
+border:none;
+color:#000;
+font-weight:600;
+border-radius:6px;
+cursor:pointer;
+}
+
+.success{
+margin-top:15px;
+color:#4CAF50;
+font-size:14px;
+}
+
+
+/* CONTACT PAGE */
+.contact-hero{
+height:100vh;
+background-image:url("../images/contact-bg.jpg");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+background-color:#0a0d12;
+position:relative;
+}
+
+.contact-hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(
+ellipse at center,
+rgba(0,0,0,0.4) 40%,
+rgba(0,0,0,0.95) 100%
+);
+}
+
+.contact-container{
+position:relative;
+z-index:2;
+max-width:700px;
+margin:120px auto;
+text-align:center;
+padding:20px;
+}
+
+.contact-container h1{
+font-size:38px;
+margin-bottom:15px;
+}
+
+.subtitle{
+color:#cccccc;
+font-size:15px;
+margin-bottom:40px;
+}
+
+.contact-card{
+background:rgba(15,18,25,0.9);
+border:1px solid rgba(212,175,55,0.4);
+border-radius:16px;
+padding:40px;
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+.contact-item{
+display:flex;
+align-items:center;
+gap:20px;
+text-align:left;
+}
+
+.icon-circle{
+width:50px;
+height:50px;
+background:linear-gradient(135deg,#d4af37,#8f6b1f);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+color:#000;
+}
+
+.contact-item h3{
+margin-bottom:5px;
+font-weight:600;
+color:#f5f5f5;
+}
+
+.contact-item p{
+color:#ddd;
+font-size:14px;
+}
+
+
+/* LOGIN PAGE */
+.login-hero{
+height:100vh;
+background-image:url("../images/login-bg.jpg");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+background-color:#0a0d12;
+position:relative;
+}
+
+.login-hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(
+ellipse at center,
+rgba(0,0,0,0.5) 40%,
+rgba(0,0,0,0.95) 100%
+);
+z-index:1;
+pointer-events:none;
+}
+
+.auth-container{
+position:relative;
+z-index:2;
+max-width:420px;
+margin:120px auto;
+background:rgba(15,18,25,0.95);
+padding:35px;
+border-radius:16px;
+border:1px solid rgba(212,175,55,0.4);
+text-align:center;
+}
+
+.auth-toggle{
+display:flex;
+margin-bottom:25px;
+}
+
+.auth-toggle button{
+flex:1;
+padding:10px;
+background:transparent;
+border:1px solid rgba(212,175,55,0.4);
+color:#ddd;
+cursor:pointer;
+font-weight:600;
+}
+
+.auth-toggle .active{
+background:#d4af37;
+color:#000;
+}
+
+.auth-form h2{
+margin-bottom:20px;
+}
+
+.auth-form input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+background:#0a0d12;
+border:1px solid rgba(212,175,55,0.5);
+color:white;
+border-radius:6px;
+}
+
+.gold-btn{
+width:100%;
+padding:12px;
+background:#d4af37;
+border:none;
+color:#000;
+font-weight:600;
+border-radius:6px;
+cursor:pointer;
+}
+
+.gold-btn:hover{
+background:#e6c35c;
+}
+
+.hidden{
+display:none;
+}
