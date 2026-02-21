@@ -88,7 +88,7 @@ border-radius:2px;
 /* HERO SECTION */
 .hero{
 height:100vh;
-/*background-image:url("../images/home.png");*/
+background-image:url("../images/home.png");
 background-size:contain;
 background-repeat:no-repeat;
 background-position:center;
